@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>¡Feliz Cumpleaños!</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #dbe9f4, #fddde6);
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    .encabezado {
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      gap: 15px;
+      overflow: hidden;
+    }
+
+    .logo {
+      width: 150px;
+      height: auto;
+      flex-shrink: 0;
+    }
+
+    .banner-texto {
+      position: relative;
+      overflow: hidden;
+      height: 40px;
+      flex: 1;
+    }
+
+    .banner-texto span {
+      position: absolute;
+      white-space: nowrap;
+      font-size: 1.2em;
+      font-weight: bold;
+      color: #0077b6;
+      background-color: #e0f7ff;
+      padding: 8px 16px;
+      border-radius: 10px;
+      animation: deslizar 16s linear infinite;
+    }
+
+    @keyframes deslizar {
+      0% { left: -100%; }
+      100% { left: 100%; }
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 30px;
+      background-color: #fff;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.8em;
+      color: #0077b6;
+    }
+
+    .mensaje {
+      font-size: 1.2em;
+      margin: 20px 0;
+      color: #555;
+    }
+
+    .galeria, .videos {
+      margin-top: 30px;
+    }
+
+    .imagenes {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .imagenes img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    video {
+      width: 90%;
+      max-width: 600px;
+      margin-top: 15px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="encabezado">
+    <img src="logo.png" alt="Logo Empresa" class="logo" />
+    <div class="banner-texto">
+      <span>Escanea tus momentos especiales</span>
+    </div>
+  </div>
+
+  <div class="container">
+    <h1>🎉 ¡Feliz Cumpleaños! 🎂</h1>
+    <p class="mensaje">
+      Hoy celebramos tu vida, tu alegría y lo especial que eres. Que este día esté lleno de sonrisas, amor y recuerdos hermosos. ¡Te lo mereces todo y más!
+    </p>
+
+    <div class="galeria">
+      <h2>RECUERDOS</h2>
+      <div class="imagenes">
+        <img src="foto1.jpg" alt="UNIDOS">
+        <img src="foto2.jpg" alt="COMPARTIR">
+        <img src="foto3.jpg" alt="ALEGRÍA">
+        <img src="foto4.jpg" alt="UNIÓN">
+      </div>
+    </div>
+
+    <div class="videos">
+      <h2>VIDEO ESPECIAL</h2>
+      <video controls>
+        <source src="video.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+</body>
+</html>
